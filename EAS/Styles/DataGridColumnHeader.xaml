@@ -1,0 +1,13 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:EAS.Styles"
+                    xmlns:metro="http://metro.mahapps.com/winfx/xaml/controls">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/controls.datagrid.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+    <Style x:Key="DataGridColumnHeaderStyle" BasedOn="{StaticResource MetroDataGridColumnHeader}" TargetType="{x:Type DataGridColumnHeader}" >
+        <Setter Property="Background" Value="#2B2B2B"/>
+        <Setter Property="Foreground" Value="#E6E6E6" />
+        <Setter Property="metro:ControlsHelper.ContentCharacterCasing" Value="Normal"/>
+    </Style>
+</ResourceDictionary>
