@@ -37,7 +37,11 @@ namespace EAS
             this.Icon = BitmapFrame.Create(iconUri);
 
             this.StateChanged += MetroWindow_StateChanged;
+            this.Loaded += MainWindow_Loaded;
+        }
 
+        private void MainWindow_Loaded(object sender, RoutedEventArgs e)
+        {
             if (SettingsList.Instance.StartMinimized)
                 this.WindowState = WindowState.Minimized;
         }
